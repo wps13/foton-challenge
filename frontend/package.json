@@ -9,12 +9,8 @@
   },
   "dependencies": {
     "react": "16.5.0",
-<<<<<<< HEAD
-    "react-native": "^0.57.1",
     "react-navigation": "^2.17.0",
-=======
-    "@babel/runtime": "^7.0.0",
->>>>>>> a2de64add5597e35e6c27936433cfb0b0e20333f
+    "@babel/runtime": "^7.0.0"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
