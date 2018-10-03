@@ -1,18 +1,18 @@
 import React from 'react'
 import { Button, TextInput, View } from 'react-native'
-import styles from '../Login/style.css'
+//import styles from './style.css'
 
-const Login = ({ navigation }) => (
+const Login = () => (
     <View>
-        <TextInput type="text" placeholder="User" style={styles} />
-        <TextInput type="password" placeholder="*******" />
-        <Button value="Sign In" />
-        <Button onPress={navigation.navigate('Register')} />
+        <TextInput textContentType="username" placeholder="User" autoCapitalize = "none" />
+        <TextInput textContentType="password" placeholder="*******" secureTextEntry={true}  autoCapitalize = "none"/>
+        {/* <Button value="Sign In" /> */}
+        {/* <Button onPress={navigation.navigate('Register')} /> */}
     </View>
 )
 
-Login.navigationOptions = {
-    title: 'Login',
-}
+// Login.navigationOptions = {
+//     title: 'Login',
+// }
 
 export default Login
