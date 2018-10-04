@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, TextInput, View, StyleSheet } from 'react-native'
+import { Button, TextInput, View, StyleSheet, Text } from 'react-native'
 
 
 const Login = () => (
@@ -9,11 +9,12 @@ const Login = () => (
             <TextInput textContentType="username" placeholder="User" autoCapitalize="none" style={styles.inputs} />
             <TextInput textContentType="password" placeholder="*******" secureTextEntry={true} autoCapitalize="none" style={styles.inputs} />
             <Button title="Sign In" color="black" />
-            <View style={styles.viewButton}>
-                <Button title="Sign Up" color="black" />
-            </View>
-        </View>
 
+        </View>
+        <View style={styles.viewReg}>
+            <Text>New here?</Text>
+            <Button title="Sign Up" color="black" />
+        </View>
 
 
         {/* <Button onPress={navigation.navigate('Register')} /> */}
@@ -26,26 +27,22 @@ const Login = () => (
 const styles = StyleSheet.create(
     {
         inputs: {
-            height: "18%",
-            width: "100%",
+            height: "15%",
             backgroundColor: "#ffffff",
-            flex: 0.1,
+            margin:"5%",
+            justifyContent: "space-between"
         },
         view: {
             flexDirection: "column",
+            justifyContent:"center",
             flex: 1,
-            alignSelf : "center",
-            justifyContent:"space-between"
         },
         viewInput: {
             flexDirection: "column",
-            flex: 0.4,
-            justifyContent:"space-around"
         },
-        viewButton: {
+        viewReg: {
             flexDirection: "column",
-            flex: 0.5,
-           justifyContent: "flex-end",
+            justifyContent: "space-between"
         }
 
     }
