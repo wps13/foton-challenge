@@ -17,11 +17,11 @@ const styles = StyleSheet.create(
             flexDirection: "column",
             justifyContent:"center",
             flex: 1,
+            backgroundColor:"white",
         },
         buttonLogin: {
             width: "60%",
             margin: "2%",
-            borderRadius: 20,
             alignSelf:"center",
         },
         viewReg: {
