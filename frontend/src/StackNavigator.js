@@ -7,4 +7,4 @@ const StackNavigator = createStackNavigator({
   Register: Register
 })
 
-export default { StackNavigator }
+export default {StackNavigator }

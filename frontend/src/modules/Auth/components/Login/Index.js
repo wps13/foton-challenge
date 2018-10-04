@@ -13,17 +13,14 @@ const Login = () => (
         </View>
         <View style={styles.viewReg}>
             <Text>New here?</Text>
-            <Button title="Sign Up" color="black" />
+            <Button title="Sign Up" color="black" onPress={navigation.navigate('Register')} />
         </View>
-
-
-        {/* <Button onPress={navigation.navigate('Register')} /> */}
     </View>
 )
 
-// Login.navigationOptions = {
-//     title: 'Login',
-// }
+Login.navigationOptions = {
+    title: 'Login',
+}
 const styles = StyleSheet.create(
     {
         inputs: {
