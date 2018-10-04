@@ -1,5 +1,5 @@
-import Login from './Login/Index'
-import Register from './Register/Index'
+import Login from './modules/Auth/components/Login/Index'
+import Register from './modules/Auth/components/Register/Index'
 import { createStackNavigator } from 'react-natigation'
 
 const StackNavigator = createStackNavigator({
