@@ -1,26 +1,21 @@
-import React, {Component} from 'react';
-import { StyleSheet, View} from 'react-native';
-import SN from './src/StackNavigator'
-// import Login from './src/modules/Auth/components/Login/Index'
-//import Register from './src/modules/Auth/components/Register/Index'
+import React from 'react';
+import Login from './src/modules/Auth/components/Login/Index'
+import Register from './src/modules/Auth/components/Register/Index'
+import { createStackNavigator } from 'react-navigation'
 
-export default class App extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-       {/* <Register /> */}
-       {/* <Login /> */}
-       <SN />
-      </View>
-    );
-  }
-}
+const Routes = 
+  createStackNavigator(
+    {
+      Login:{
+        screen: Login,
+      }, 
+      Register: Register
+    },
+    {
+      initialRouteName: 'Login',
+    }
+  )
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-});
+const App = () => <Routes />
+
+export default App

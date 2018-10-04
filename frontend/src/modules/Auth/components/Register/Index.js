@@ -15,7 +15,7 @@ const Register = ({navigation}) => (
         </View>
         <View style={styles.viewLogin}>
             <Text>Already have a account?</Text>
-            <Button title="Login"  onPress= {navigation.navigate('Login')}/>
+            <Button title="Login"  onPress={() => navigation.navigate('Login')}/>
         </View>
     </View>
 )
