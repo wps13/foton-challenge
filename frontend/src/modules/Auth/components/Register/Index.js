@@ -3,7 +3,7 @@ import { TextInput, View, Button, Text} from 'react-native'
 import styles from './style'
 
 const Register = ({navigation}) => (
-    <View style={styles.view}>
+    <View style={styles.container}>
         <View style={styles.viewReg}>
             <View style={styles.viewNames}>
                 <TextInput typeContentType="name" placeholder="full name" autoCapitalize="none" />

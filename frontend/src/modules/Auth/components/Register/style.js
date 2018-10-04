@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
         margin: 20,
         padding: "10%"
     },
-    view: {
+    container: {
         flexDirection: "column",
         justifyContent: "space-between",
     },
