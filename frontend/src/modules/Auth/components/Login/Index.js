@@ -6,8 +6,8 @@ const Login = ({navigation}) => (
     <View style={styles.view}>
 
         <View style={styles.viewInput}>
-            <TextInput textContentType="username" placeholder="User" autoCapitalize="none" style={styles.inputs} />
-            <TextInput textContentType="password" placeholder="*******" secureTextEntry={true} autoCapitalize="none" style={styles.inputs} />
+            <TextInput textContentType="username" placeholder="User" autoCapitalize="none" style={styles.inputs} maxLength="20" />
+            <TextInput textContentType="password" placeholder="*******" secureTextEntry={true} autoCapitalize="none" style={styles.inputs} maxLength="20"/>
             <Button title="Sign In" color="black" />
 
         </View>
