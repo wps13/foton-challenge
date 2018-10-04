@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, TextInput, View, StyleSheet, Text } from 'react-native'
 
 
-const Login = () => (
+const Login = ({navigation}) => (
     <View style={styles.view}>
 
         <View style={styles.viewInput}>

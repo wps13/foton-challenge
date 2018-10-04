@@ -2,7 +2,7 @@ import React from 'react'
 import { TextInput, View, Button, Text, StyleSheet } from 'react-native'
 
 //{navigation}
-const Register = () => (
+const Register = ({navigation}) => (
     <View style={styles.view}>
         <View style={styles.viewReg}>
             <View style={styles.viewNames}>
@@ -15,11 +15,8 @@ const Register = () => (
         </View>
         <View style={styles.viewLogin}>
             <Text>Already have a account?</Text>
-            <Button title="Login" />
+            <Button title="Login"  onPress= {navigation.navigate('Login')}/>
         </View>
-
-
-        {/* <Button onPress= {navigation.navigate('Login')} /> */}
     </View>
 )
 
