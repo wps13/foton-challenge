@@ -40,7 +40,6 @@ const styles = StyleSheet.create(
         viewInput: {
             flexDirection: "column",
             flex: 0.4,
-            alignItems: "center",
             justifyContent:"space-around"
         },
         viewButton: {
