@@ -12,7 +12,7 @@ const Login = ({navigation}) => (
 
         </View>
         <View style={styles.viewReg}>
-            <Text>New here?</Text>
+            <Text style={styles.text}>New here?</Text>
             <Button title="Sign Up" color="black" onPress={() => navigation.navigate('Register')} />
         </View>
     </View>

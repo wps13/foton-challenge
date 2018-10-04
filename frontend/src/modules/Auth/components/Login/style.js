@@ -19,8 +19,11 @@ const styles = StyleSheet.create(
         viewReg: {
             flexDirection: "column",
             justifyContent: "space-between"
+        },
+        text:{
+            fontSize: 14,
+            fontWeight: "bold",
         }
-
     }
 )
 
