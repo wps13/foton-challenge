@@ -1,18 +1,28 @@
 import React from 'react'
-import { TextInput, View, Button, Text } from 'react-native'
+import { TextInput, View, Button, Text, StyleSheet } from 'react-native'
 
-const Register = ({navigation}) => (
+//{navigation}
+const Register = () => (
     <View>
-    <TextInput type="text" placeholder="full name" />
-    <TextInput type="text" placeholder="email" />
-    <TextInput type="password" placeholder="******" />
-    <Text>Doesn't have a account?</Text>
-    <Button onPress= {navigation.navigate('Login')} />
+        <View style={styles.viewNames}>
+        <TextInput typeContentType="name" placeholder="full name" autoCapitalize="none" />
+    <TextInput typeContentType="emailAddress" placeholder="email" autoCapitalize="none"/>
+        </View>
+    
+    <TextInput  typeContentType="username" autoCapitalize="none" />
+    <TextInput typeContentType="password" placeholder="******" secureTextEntry={true} autoCapitalize="none" />
+    <Button title="Sign Up" color="black" />
+    <Text>Already have a account?</Text>
+    {/* <Button onPress= {navigation.navigate('Login')} /> */}
 </View>
 )
 
 Register.navigationOptions = {
     title: 'Register',
 }
-
+const styles = StyleSheet.create({
+    viewNames:{
+        flexDirection : "row",
+    }
+})
 export default Register
