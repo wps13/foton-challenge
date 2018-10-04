@@ -1,7 +1,7 @@
 import React from 'react'
-import { TextInput, View, Button, Text, StyleSheet } from 'react-native'
+import { TextInput, View, Button, Text} from 'react-native'
+import styles from './style'
 
-//{navigation}
 const Register = ({navigation}) => (
     <View style={styles.view}>
         <View style={styles.viewReg}>
@@ -23,23 +23,5 @@ const Register = ({navigation}) => (
 Register.navigationOptions = {
     title: 'Register',
 }
-const styles = StyleSheet.create({
-    viewNames: {
-        flexDirection: "row",
-    },
-    viewLogin: {
-        justifyContent: "space-between",
-        margin: 20,
-        padding: "10%"
-    },
-    view: {
-        flexDirection: "column",
-        justifyContent: "space-between",
-    },
-    viewReg:{
-        flexDirection: "column",
-        justifyContent: "space-around",
-        margin:10
-    }
-})
+
 export default Register
