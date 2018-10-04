@@ -4,8 +4,8 @@ import styles from './style'
 
 const Register = ({ navigation }) => (
     <View style={styles.container}>
+        <Text style={styles.text}>Create a new account!</Text>
         <View style={styles.viewReg}>
-            <Text>Create a new account!</Text>
             <TextInput typeContentType="name" placeholder="full name" autoCapitalize="none" />
             <TextInput typeContentType="emailAddress" placeholder="email" autoCapitalize="none" />
             <TextInput typeContentType="username" autoCapitalize="none" placeholder="username" />

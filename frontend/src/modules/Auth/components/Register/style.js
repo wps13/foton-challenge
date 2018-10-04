@@ -1,15 +1,23 @@
-import {StyleSheet} from 'react-native'
+import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
     container: {
         flexDirection: "column",
-        justifyContent: "space-between",
-        alignSelf:"center"
+        alignSelf: "center",
+        width: "80%",
+        margin: "10%",
     },
-    viewReg:{
+    viewReg: {
         flexDirection: "column",
-        justifyContent: "space-between",
-        margin:10
+        margin: "10%",
+        padding:"5%",
+        backgroundColor: "white",
+    },
+    text:{
+        fontWeight:"bold",
+        color:"black",
+        fontSize:20,
+        alignSelf:"center",
     }
 })
 
