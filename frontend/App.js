@@ -8,8 +8,12 @@ const Routes =
     {
       Login:{
         screen: Login,
+        title:"Login"
       }, 
-      Register: Register
+      Register:{
+        screen:Register,
+        title:"Register"
+      } 
     },
     {
       initialRouteName: 'Login',

@@ -5,6 +5,7 @@ import styles from './style'
 const Register = ({ navigation }) => (
     <View style={styles.container}>
         <View style={styles.viewReg}>
+            <Text>Create a new account!</Text>
             <TextInput typeContentType="name" placeholder="full name" autoCapitalize="none" />
             <TextInput typeContentType="emailAddress" placeholder="email" autoCapitalize="none" />
             <TextInput typeContentType="username" autoCapitalize="none" placeholder="username" />
@@ -13,9 +14,5 @@ const Register = ({ navigation }) => (
         </View>
     </View>
 )
-
-Register.navigationOptions = {
-    title: 'Register',
-}
 
 export default Register

@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: "column",
         justifyContent: "space-between",
+        alignSelf:"center"
     },
     viewReg:{
         flexDirection: "column",
