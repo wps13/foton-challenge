@@ -9,15 +9,18 @@ const styles = StyleSheet.create({
     },
     viewReg: {
         flexDirection: "column",
-        margin: "10%",
-        padding:"5%",
-        backgroundColor: "white",
+        margin:"5%",
     },
     text:{
         fontWeight:"bold",
         color:"black",
-        fontSize:20,
+        fontSize:24,
         alignSelf:"center",
+    },
+    input:{
+        backgroundColor: "white",
+        margin: "2%",
+        padding:"3%",
     }
 })
 
