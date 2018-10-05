@@ -21,6 +21,11 @@ const styles = StyleSheet.create({
         backgroundColor: "white",
         margin: "2%",
         padding:"3%",
+    },
+    button:{
+        width:"40%",
+        alignSelf:"center",
+        margin:"5%"
     }
 })
 

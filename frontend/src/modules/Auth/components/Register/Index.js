@@ -15,7 +15,10 @@ const Register = ({ navigation }) => (
             <TextInput 
             typeContentType="password" placeholder="******" secureTextEntry={true} autoCapitalize="none" style={styles.input}
             maxLength={15} />
+            <View style={styles.button}> 
             <Button title="Sign Up" color="black" />
+            </View>
+
         </View>
     </View>
 )
