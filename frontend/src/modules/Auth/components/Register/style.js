@@ -9,25 +9,25 @@ const styles = StyleSheet.create({
     },
     viewReg: {
         flexDirection: "column",
-        margin:"5%",
+        margin: "5%",
     },
-    text:{
-        fontWeight:"bold",
-        color:"black",
-        fontSize:24,
-        alignSelf:"center",
+    text: {
+        fontWeight: "bold",
+        color: "black",
+        fontSize: 24,
+        alignSelf: "center",
     },
-    input:{
+    input: {
         backgroundColor: "white",
         margin: "2%",
-        padding:"3%",
-        borderRadius:20,
+        padding: "3%",
+        borderRadius: 20,
     },
-    button:{
-        width:"40%",
-        alignSelf:"center",
-        margin:"5%"
-    }
+    button: {
+        width: "40%",
+        alignSelf: "center",
+        margin: "5%"
+    },
 })
 
 export default styles

@@ -1,41 +1,44 @@
-import {StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create(
     {
-        inputs: {
-            height: "10%",
-            width: "60%",
-            backgroundColor: "#ffffff",
-            margin: "2%",
-            justifyContent: "space-between",
-            borderRadius: 10,
-            padding: "2%",
-            alignSelf:"center",
+        container: {
             flexDirection: "column",
-        },
-        view: {
-            flexDirection: "column",
-            justifyContent:"center",
+            justifyContent: "center",
             flex: 1,
-            backgroundColor:"white",
         },
         buttonLogin: {
-            width: "60%",
+            width: "25%",
             margin: "2%",
-            alignSelf:"center",
+            alignSelf: "center",
         },
         viewReg: {
             flexDirection: "column",
             width: "60%",
             alignSelf: "center",
-            margin:"10%",
-            padding:"5%"
+            margin: "10%",
+            padding: "5%"
         },
-        text:{
+        text: {
             fontSize: 20,
             fontWeight: "bold",
             color: "black",
-            alignSelf:"center",
+            alignSelf: "center",
+        },
+        inputs: {
+            width: "80%",
+            backgroundColor: "#ffffff",
+            margin: "5%",
+            justifyContent: "space-between",
+            borderRadius: 15,
+            alignSelf: "center",
+            flexDirection: "column",
+        },
+        button:
+        {
+            width: "40%",
+            alignSelf: "center",
+            margin: "5%"
         }
     }
 )
