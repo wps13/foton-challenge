@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: "column",
         alignSelf: "center",
-        width: "80%",
+        width: "100%",
         margin: "10%",
     },
     viewReg: {
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     },
     text: {
         fontWeight: "bold",
-        color: "black",
+        color: "white",
         fontSize: 24,
         alignSelf: "center",
     },
