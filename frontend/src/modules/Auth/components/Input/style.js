@@ -14,7 +14,9 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight:"bold",
         color:"black",
-        marginLeft:"10%",        
+        backgroundColor:"white",
+        borderRadius:20, 
+        alignSelf:"center"      
     },
     container:{
         alignItems:"stretch",
