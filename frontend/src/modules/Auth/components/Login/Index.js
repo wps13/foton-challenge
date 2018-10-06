@@ -5,7 +5,7 @@ import Input from '../Input/Index'
 
 const Login = ({ navigation }) => (
 
-    <ImageBackground source={require("../../assets/sakura.jpg")} imageStyle={
+    <ImageBackground source={require("../../assets/images/rocks.jpg")} imageStyle={
         { resizeMode: "stretch" }} style={{width: '100%', height: '100%'}}>
         <View style={styles.container}>
             <Text style={styles.text}>Welcome back!</Text>

@@ -22,9 +22,8 @@ const styles = StyleSheet.create(
         text: {
             fontSize: 20,
             fontWeight: "bold",
-            color: "black",
+            color: "white",
             alignSelf: "center",
-            backgroundColor:"#FFFFF0",
             borderRadius:15,
         },
         inputs: {

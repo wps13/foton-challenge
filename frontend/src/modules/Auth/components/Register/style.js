@@ -17,12 +17,6 @@ const styles = StyleSheet.create({
         fontSize: 24,
         alignSelf: "center",
     },
-    input: {
-        backgroundColor: "white",
-        margin: "2%",
-        padding: "3%",
-        borderRadius: 20,
-    },
     button: {
         width: "40%",
         alignSelf: "center",

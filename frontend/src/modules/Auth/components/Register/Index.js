@@ -1,27 +1,26 @@
 import React from 'react'
-import { TextInput, View, Button, Text } from 'react-native'
+import { TextInput, View, Button, Text, ImageBackground } from 'react-native'
 import styles from './style'
+import Input from '../Input/Index'
 
 const Register = ({ navigation }) => (
-    <View style={styles.container}>
-        <Text style={styles.text}>Create a new account!</Text>
-        <View style={styles.viewReg}>
-            <TextInput
-                typeContentType="name" placeholder="full name" autoCapitalize="none" style={styles.input} maxLength={30} />
-            <TextInput
-                typeContentType="emailAddress" placeholder="email" autoCapitalize="none" style={styles.input} maxLength={30} />
-            <TextInput
-                typeContentType="username" autoCapitalize="none" placeholder="username" style={styles.input} maxLength={20} />
-            <TextInput
-                typeContentType="password" placeholder="******" secureTextEntry={true} autoCapitalize="none" style={styles.input}
-                maxLength={15} />
+    <ImageBackground source={require("../../assets/images/raindrops.jpg")} imageStyle={{ resizeMode: "stretch" }} style={{width: '100%', height: '100%'}}>
+        <View style={styles.container}>
+            <Text style={styles.text}>Create a new account!</Text>
+            <View style={styles.viewReg}>
+                <Input label="Full Name" type="name" size={40} secure={false}  />
+                <Input label="Email" type="email" size={30} secure={false} /> 
+                <Input label="Username" type="username" size={20} secure={false} />
+                <Input label="Password" type="password" size={15} secure={true} />
 
-            <View style={styles.button}>
-                <Button title="Sign Up" color="black" />
+                <View style={styles.button}>
+                    <Button title="Sign Up" color="black" />
+                </View>
+
             </View>
-
         </View>
-    </View>
+    </ImageBackground>
+
 )
 
 export default Register

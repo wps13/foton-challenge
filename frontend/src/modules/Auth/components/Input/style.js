@@ -13,8 +13,7 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 16,
         fontWeight:"bold",
-        color:"black",
-        backgroundColor:"#FFFFF0",
+        color:"white",
         borderRadius:20, 
         alignSelf:"center"      
     },
