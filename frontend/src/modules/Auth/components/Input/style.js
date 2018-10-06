@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight:"bold",
         color:"black",
-        backgroundColor:"white",
+        backgroundColor:"#FFFFF0",
         borderRadius:20, 
         alignSelf:"center"      
     },

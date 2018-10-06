@@ -24,6 +24,8 @@ const styles = StyleSheet.create(
             fontWeight: "bold",
             color: "black",
             alignSelf: "center",
+            backgroundColor:"#FFFFF0",
+            borderRadius:15,
         },
         inputs: {
             width: "80%",

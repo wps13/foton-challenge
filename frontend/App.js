@@ -8,11 +8,16 @@ const Routes =
     {
       Login:{
         screen: Login,
-        title:"Login"
+        navigationOptions: {
+          header: null,
+        }
       }, 
       Register:{
         screen:Register,
-        title:"Register"
+        navigationOptions:{
+          title:"Register"
+        }
+        
       } 
     },
     {
