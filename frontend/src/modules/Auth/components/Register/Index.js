@@ -5,6 +5,15 @@ import styles from './style'
 import Input from '../Input/Index'
 
 class Register extends Component({ navigation }) {
+    state={
+        fullName: '',
+        email: '',
+        username: '',
+        password:''
+    }
+    
+    onChangeHandler = ({field,value}) => this.setState={[field]:value}
+    
     render() {
         return (
             <ImageBackground source={require("../../assets/images/raindrops.jpg")} imageStyle={{ resizeMode: "stretch" }} style={{ width: '100%', height: '100%' }}>
