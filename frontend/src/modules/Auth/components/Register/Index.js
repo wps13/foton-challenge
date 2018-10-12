@@ -4,7 +4,7 @@ import { View, Button, Text, ImageBackground } from 'react-native'
 import styles from './style'
 import Input from '../Input/Index'
 
-class Register extends Component({ navigation }) {
+class Register extends Component{
     state={
         fullName: '',
         email: '',
