@@ -21,7 +21,7 @@ class Login extends Component{
 
                     <Input label="User" type="username" size={20} secure={false} change={data => this.onChangeHandler("username",data)}/>
                     <Input label="Password" type="password" size={20} secure={true} />
-                    
+                    <Text style={{color:"white", fontWeight:"bold", fontSize:20, alignSelf:"center", justifyContent:"center"}}> {this.state.username}</Text>
                     <View style={styles.buttonLogin} >
                         <Button title="Sign In" color="black" />
                     </View>

@@ -2,10 +2,10 @@ import React from 'react'
 import { TextInput, Text, View } from 'react-native'
 import styles from './style'
 
-const Input = props => (
+const Input = ({label, type, size, secure, change}) => (
     <View style={styles.container}>
-        <Text style={styles.text}>{props.label}</Text>
-        <TextInput textContentType={props.type} autoCapitalize="none" maxLength={props.size} secureTextEntry={props.secure} style={styles.input} onChangeText={} />
+        <Text style={styles.text}>{label}</Text>
+        <TextInput textContentType={type} autoCapitalize="none" maxLength={size} secureTextEntry={secure} style={styles.input} onChangeText={change} />
     </View>
 
 )
