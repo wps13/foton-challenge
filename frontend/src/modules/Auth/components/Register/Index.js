@@ -12,7 +12,7 @@ class Register extends Component{
         password:''
     }
     
-    onChangeHandler = ({field,value}) => this.setState={[field]:value}
+    onChangeHandler = (field,value) => this.setState({[field]:value})
     
     render() {
         return (
@@ -20,10 +20,10 @@ class Register extends Component{
                 <View style={styles.container}>
                     <Text style={styles.text}>Create a new account!</Text>
                     <View style={styles.viewReg}>
-                        <Input label="Full Name" type="name" size={40} secure={false} />
-                        <Input label="Email" type="email" size={30} secure={false} />
-                        <Input label="Username" type="username" size={20} secure={false} />
-                        <Input label="Password" type="password" size={15} secure={true} />
+                        <Input label="Full Name" type="name" size={40} secure={false} change={data => this.onChangeHandler("fullName",data)} />
+                        <Input label="Email" type="email" size={30} secure={false} change={data => this.onChangeHandler("email",data)}/>
+                        <Input label="Username" type="username" size={20} secure={false} change={data => this.onChangeHandler("username",data)}/>
+                        <Input label="Password" type="password" size={15} secure={true} change={data => this.onChangeHandler("password",data)}/>
 
                         <View style={styles.button}>
                             <Button title="Sign Up" color="black" />

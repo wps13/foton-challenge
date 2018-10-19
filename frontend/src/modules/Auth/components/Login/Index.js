@@ -9,7 +9,7 @@ class Login extends Component{
         username: '',
         password:''
     }
-    onChangeHandler = ({field,value}) => this.setState={[field]:value}
+    onChangeHandler = (value1,value2) => this.setState({[value1]:value2})
 
     render() {
         return (
@@ -18,14 +18,11 @@ class Login extends Component{
                  { resizeMode: "stretch" }} style={{ width: '100%', height: '100%' }}>
                 <View style={styles.container}>
                     <Text style={styles.text}>Welcome back!</Text>
-
                     <Input label="User" type="username" size={20} secure={false} change={data => this.onChangeHandler("username",data)}/>
-                    <Input label="Password" type="password" size={20} secure={true} />
-                    <Text style={{color:"white", fontWeight:"bold", fontSize:20, alignSelf:"center", justifyContent:"center"}}> {this.state.username}</Text>
+                    <Input label="Password" type="password" size={20} secure={true} change={data => this.onChangeHandler("password",data)}/>
                     <View style={styles.buttonLogin} >
                         <Button title="Sign In" color="black" />
                     </View>
-                    <Text>{this.username}</Text>
                     <View style={styles.viewReg}>
                         <Text style={styles.text}>New here?</Text>
                         <View style={styles.button}>
