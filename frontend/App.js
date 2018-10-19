@@ -1,6 +1,8 @@
 import React from 'react';
 import Login from './src/modules/Auth/components/Login/Index'
 import Register from './src/modules/Auth/components/Register/Index'
+import Product from './src/modules/Create/components/Product/Index'
+
 import { createStackNavigator } from 'react-navigation'
 
 const Routes = 
@@ -16,8 +18,13 @@ const Routes =
         screen:Register,
         navigationOptions:{
           title:"Register"
-        }
-        
+        },
+      Product:{
+        screen: Product,
+          navigationOptions:{
+            header:null,
+          }
+      },
       } 
     },
     {
