@@ -26,7 +26,7 @@ class Register extends Component{
                         <Input label="Password" type="password" size={15} secure={true} change={data => this.onChangeHandler("password",data)}/>
 
                         <View style={styles.button}>
-                            <Button title="Sign Up" color="black" onPress={() => this.props.navigate('Home')} />
+                            <Button title="Sign Up" color="black" onPress={() => this.props.navigation.navigate('Home')} />
                         </View>
 
                     </View>
