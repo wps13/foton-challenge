@@ -5,7 +5,7 @@ import Button from './Button/Index'
 class Home extends Component {
     render() {
         <View>
-            <Buttom text="Create Product" onPress={() => this.props.navigate("createProduct")}/>
+            <Buttom text="Create Product" onPress={() => this.props.navigate('createProduct')}/>
         </View>
     }
 }
