@@ -1,5 +1,4 @@
-import React from 'react'
-import { Component } from 'react-native'
+import React,  { Component } from 'react'
 import Button from '../Button/Index'
 
 class Home extends Component {
