@@ -1,4 +1,9 @@
 import React from 'react'
 import Button from '../Button/Index'
 
-<Buttom text={} />
+const Home = () => (
+    <View>
+        <Buttom text={} />
+    </View>
+)
+
