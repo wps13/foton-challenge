@@ -21,7 +21,7 @@ class Login extends Component{
                     <Input label="User" type="username" size={20} secure={false} change={data => this.onChangeHandler("username",data)}/>
                     <Input label="Password" type="password" size={20} secure={true} change={data => this.onChangeHandler("password",data)}/>
                     <View style={styles.buttonLogin} >
-                        <Button title="Sign In" color="black" />
+                        <Button title="Sign In" color="black" onPress={() => this.props.navigate('Home')} />
                     </View>
                     <View style={styles.viewReg}>
                         <Text style={styles.text}>New here?</Text>
