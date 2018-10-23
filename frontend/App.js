@@ -20,6 +20,12 @@ const Routes =
           title:"Register"
         }
       },
+      Home:{
+        screen: Home,
+        navigationOptions:{
+          header:null,
+        }
+      },
       createProduct:{
         screen: Product,
           navigationOptions:{
