@@ -3,7 +3,7 @@ import { View, Text, TouchableHighlight } from 'react-native'
 
 const Button = (props) => (
     <View>
-        <TouchableHighlight onPress={}>
+        <TouchableHighlight onPress={props.press}>
             <View>
                 <Text> {props.text} </Text>
             </View>
