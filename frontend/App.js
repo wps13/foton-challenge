@@ -2,6 +2,7 @@ import React from 'react';
 import Login from './src/modules/Auth/components/Login/Index'
 import Register from './src/modules/Auth/components/Register/Index'
 import Product from './src/modules/Create/components/Product/Index'
+import Home from './src/modules/Home/Index'
 
 import { createStackNavigator } from 'react-navigation'
 
