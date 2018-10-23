@@ -7,7 +7,7 @@ class Home extends Component {
     render() {
         return (
             <View>
-                <Button text="Create Product" onPress={() => this.props.navigation.navigate('createProduct')} />
+                <Button text="Create Product" press={() => this.props.navigation.navigate('createProduct')} />
             </View>
         )
     }
