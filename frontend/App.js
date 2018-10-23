@@ -18,14 +18,21 @@ const Routes =
         screen:Register,
         navigationOptions:{
           title:"Register"
-        },
-      Product:{
+        }
+      },
+      createProduct:{
         screen: Product,
           navigationOptions:{
             header:null,
           }
       },
-      } 
+     /*  listProduct:{
+        screen: List,
+        navigationOptions:{
+          header:null,
+        }
+      } */
+       
     },
     {
       initialRouteName: 'Login',
