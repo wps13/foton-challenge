@@ -11,7 +11,6 @@ const Style = StyleSheet.create({
         fontWeight:"bold"
     },
     View:{
-        backgroundColor:"gray",
         flexFlow:"column noWrap",
         flex:1,
     },

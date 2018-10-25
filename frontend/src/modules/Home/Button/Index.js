@@ -6,7 +6,7 @@ const Button = (props) => (
     <View>
         <TouchableHighlight onPress={props.press}>
             <View>
-                <Text> {props.text} </Text>
+                <Text style={Styles.TextButton}> {props.text} </Text>
             </View>
         </TouchableHighlight>
     </View>

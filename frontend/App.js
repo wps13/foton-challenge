@@ -18,7 +18,7 @@ const Routes =
       Register:{
         screen:Register,
         navigationOptions:{
-          title:"Register"
+          header: null,
         }
       },
       Home:{
