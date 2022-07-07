@@ -1,51 +1,25 @@
 import React from 'react';
-import Login from './src/modules/Auth/components/Login/Index'
-import Register from './src/modules/Auth/components/Register/Index'
-import Product from './src/modules/Create/components/Product/Index'
-import Home from './src/modules/Home/Index'
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import { createStackNavigator } from 'react-navigation'
+import Login from './src/modules/Auth/components/Login/Index';
+import Register from './src/modules/Auth/components/Register/Index';
+import Product from './src/modules/Create/components/Product/Index';
+import Home from './src/modules/Home/Index';
 
-const Routes = 
-  createStackNavigator(
-    {
-      Login:{
-        screen: Login,
-        navigationOptions: {
-          header: null,
-        }
-      }, 
-      Register:{
-        screen:Register,
-        navigationOptions:{
-          header: null,
-        }
-      },
-      Home:{
-        screen: Home,
-        navigationOptions:{
-          header:null,
-        }
-      },
-      createProduct:{
-        screen: Product,
-          navigationOptions:{
-            header:null,
-          }
-      },
-     /*  listProduct:{
-        screen: List,
-        navigationOptions:{
-          header:null,
-        }
-      } */
-       
-    },
-    {
-      initialRouteName: 'Login',
-    }
-  )
+const Stack = createNativeStackNavigator();
 
-const App = () => <Routes />
+const App = () => (
+  <NavigationContainer>
+    <Stack.Navigator
+      initialRouteName="Login"
+      screenOptions={{headerShown: false}}>
+      <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="Register" component={Register} />
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="createProduct" component={Product} />
+    </Stack.Navigator>
+  </NavigationContainer>
+);
 
-export default App
+export default App;
