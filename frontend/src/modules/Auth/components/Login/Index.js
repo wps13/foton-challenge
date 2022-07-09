@@ -1,54 +1,52 @@
-import React from 'react';
-import {Component} from 'react';
+import React, {useState} from 'react';
 import {Button, View, Text} from 'react-native';
 import styles from './style';
 import Input from '../Input/Index';
 
-class Login extends Component {
-  state = {
-    username: '',
-    password: '',
-  };
-  onChangeHandler = (value1, value2) => this.setState({[value1]: value2});
+const Login = props => {
+  const [loginData, setLoginData] = useState({username: '', password: ''});
 
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.text}>Welcome back!</Text>
-        <Input
-          label="User"
-          type="username"
-          size={20}
-          secure={false}
-          change={data => this.onChangeHandler('username', data)}
+  const onChangeHandler = (value1, value2) =>
+    setLoginData(previousState => ({...previousState, [value1]: value2}));
+
+  const {navigation} = props;
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>Welcome back!</Text>
+      <Input
+        label="User"
+        type="username"
+        size={20}
+        secure={false}
+        change={data => onChangeHandler('username', data)}
+      />
+      <Input
+        label="Password"
+        type="password"
+        size={20}
+        secure={true}
+        change={data => onChangeHandler('password', data)}
+      />
+      <View style={styles.buttonLogin}>
+        <Button
+          title="Sign In"
+          color="black"
+          onPress={() => navigation.navigate('Home')}
         />
-        <Input
-          label="Password"
-          type="password"
-          size={20}
-          secure={true}
-          change={data => this.onChangeHandler('password', data)}
-        />
-        <View style={styles.buttonLogin}>
+      </View>
+      <View style={styles.viewReg}>
+        <Text style={styles.text}>New here?</Text>
+        <View style={styles.button}>
           <Button
-            title="Sign In"
+            title="Sign Up"
             color="black"
-            onPress={() => this.props.navigation.navigate('Home')}
+            onPress={() => navigation.navigate('Register')}
           />
         </View>
-        <View style={styles.viewReg}>
-          <Text style={styles.text}>New here?</Text>
-          <View style={styles.button}>
-            <Button
-              title="Sign Up"
-              color="black"
-              onPress={() => this.props.navigation.navigate('Register')}
-            />
-          </View>
-        </View>
       </View>
-    );
-  }
-}
+    </View>
+  );
+};
 
 export default Login;
